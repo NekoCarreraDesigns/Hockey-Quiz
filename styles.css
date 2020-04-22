@@ -1,0 +1,88 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+body.wrong {
+    background-image: url(./assets/roy.jpg);
+    
+    background-color: white;
+    width: auto;
+}
+body.correct {
+    background-image: url(./assets/redwing.jpg);
+    background-color: red;
+    width: auto;
+    display: flex;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: red;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px;
+
+}
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+    
+}
+.btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+.btn:hover {
+    background-color: blue;
+}
+.btn.wrong {
+    background-color: white;
+    color: blue;
+}
+.btn.correct {
+    background-color: white;
+    color: red;
+}
+.start-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.next-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+
+#metrics {
+    position: relative;
+   color: red;
+   padding-left: 20px 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bold;
+
+}
+
+
