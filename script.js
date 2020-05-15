@@ -5,7 +5,7 @@ var questionElement = document.getElementById("hockey-questions");
 var answerButtonsElement = document.getElementById("answer-buttons");
 var shufflehockeyQuestions, currentQuestionIndex
 var correctAnswers = 0;
-var gameOver = false;
+
 
 var score = 0;
 c = 60;
@@ -31,6 +31,7 @@ function timer001() {
     if (c < 1) {
         window.clearInterval(update)
         alert("times up!")
+        document.getElementById("scorecard").classList.remove("hide")
 
 
     }
@@ -85,7 +86,8 @@ function selectAnswer(e) {
     if (correct === "true") {
         score++;
         document.getElementById("score001").innerText = score;
-    } else {
+    }
+    else {
         c = c - 5;
     }
     setStatusClass(document.body, correct)
@@ -126,13 +128,14 @@ function clearStatusClass(element) {
 
 
 function gameOver() {
-    if (c < 1) {
-
-
-
+    if (score === 10) {
+        alert("You Won The Stanley Cup!");
+        setScore = prompt("Enter your initials")
+    } else if (gameOver === true) {
+        alert("Times Up!")
     }
 }
-
+gameOver(score)
 var hockeyQuestions = [
     {
         question: "Who is the greatest hockey player of all time?",
