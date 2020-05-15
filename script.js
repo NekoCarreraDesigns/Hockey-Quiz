@@ -32,6 +32,7 @@ function timer001() {
         window.clearInterval(update)
         alert("times up!")
 
+
     }
 
 }
