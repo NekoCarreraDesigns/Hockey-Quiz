@@ -128,14 +128,17 @@ function clearStatusClass(element) {
 
 
 function gameOver() {
-    if (score === 10) {
+    if (correctAnswers === 10) {
+        c = "-";
         alert("You Won The Stanley Cup!");
         setScore = prompt("Enter your initials")
+        gameOver()
     } else if (gameOver === true) {
         alert("Times Up!")
+        gameOver()
     }
 }
-gameOver()
+
 var hockeyQuestions = [
     {
         question: "Who is the greatest hockey player of all time?",
