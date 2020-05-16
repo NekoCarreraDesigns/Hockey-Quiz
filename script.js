@@ -12,7 +12,7 @@ c = 60;
 
 
 
-var highScores = JSON.parse(localStorage.getItem(highScores)) || []
+
 var horn = new Audio();
 horn.src = "http://dight310.byu.edu/media/audio/FreeLoops.com/4/4/Hockey%20Horn%20Wav-4050-Free-Loops.com.mp3";
 
@@ -135,7 +135,7 @@ function gameOver() {
         alert("Times Up!")
     }
 }
-gameOver(score)
+gameOver()
 var hockeyQuestions = [
     {
         question: "Who is the greatest hockey player of all time?",
