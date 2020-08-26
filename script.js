@@ -126,18 +126,19 @@ function clearStatusClass(element) {
     element.classList.remove("wrong")
 }
 
-
 function gameOver() {
-    if (correctAnswers === 10) {
+    if ("true" === 10) {
+
         c = "-";
         alert("You Won The Stanley Cup!");
-        setScore = prompt("Enter your initials")
+        saveScore = prompt("Enter your initials")
         gameOver()
     } else if (gameOver === true) {
         alert("Times Up!")
         gameOver()
     }
 }
+
 
 var hockeyQuestions = [
     {
