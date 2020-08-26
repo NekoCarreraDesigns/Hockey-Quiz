@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # Title: Hockey Quiz
 
@@ -53,3 +54,19 @@
   ##### _Created with [NekoCarreraDesigns readme generator] (https://github.com/NekoCarreraDesigns/readme-generator)
 
   
+=======
+# Hockey Quiz
+A fun vanilla javascript quiz app that use hockey as its theme because, hockey is awesome, and quizzes are fun
+
+# Contriibutors
+
+Nicholas C. Maas
+
+# Technologies 
+
+HTML, CSS3, JavaScript
+
+# Questions, Comments, Bugs
+
+Email Nicholas C. Maas at denvernick@hotmail.com
+>>>>>>> 8468421d2fbec049d4ba814a5c28b620d3f7517a
